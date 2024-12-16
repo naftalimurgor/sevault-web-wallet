@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 20 66% 99%;
+    --background: #ffba0a;
     --foreground: 20 51% 4%;
     --muted: 20 25% 86%;
     --muted-foreground: 20 7% 25%;
@@ -79,6 +79,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply box-border bg-background text-foreground;
   }
@@ -86,11 +87,14 @@
 
 @layer utilities {
   .min-h-screen {
-    min-height: 100vh; /* Fallback */
+    min-height: 100vh;
+    /* Fallback */
     min-height: 100dvh;
   }
+
   .h-screen {
-    height: 100vh; /* Fallback */
+    height: 100vh;
+    /* Fallback */
     height: 100dvh;
   }
 }
@@ -99,6 +103,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
